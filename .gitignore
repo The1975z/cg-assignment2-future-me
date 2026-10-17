@@ -1,0 +1,36 @@
+# CMake build output
+build/
+build-*/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+
+# Local CMake presets (machine-specific; do not commit)
+CMakeUserPresets.json
+
+# Visual Studio / MSVC
+.vs/
+*.vcxproj*
+*.sln
+
+# Compiled output
+*.exe
+*.dll
+*.lib
+*.pdb
+*.obj
+*.o
+*.a
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project files kept out of the public repository
+!Models/*.obj
+Models/Boeing 747-8I_textured.obj
+Models/Boeing 747-8I_textured.mtl
+Textures/faib_b7478_t_0.jpeg
+tmp/
+Assignment2_*.png
+Assignment2_*.jpg

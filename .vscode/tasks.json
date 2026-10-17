@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Assignment2 (CMake Debug)",
+            "type": "shell",
+            "command": "cmake --build --preset build-win-2026-debug",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Run Assignment2 (Release)",
+            "type": "shell",
+            "command": "cmake --build --preset build-win-2026-release; if ($?) { .\\build\\win-msvc-2026\\Release\\OpenGLStarter.exe }",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": [
+                        "-NoProfile",
+                        "-Command"
+                    ]
+                }
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        }
+    ]
+}
